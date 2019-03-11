@@ -1,0 +1,64 @@
+<!--
+  Generated template for the Categories page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <img src="assets/img/small-logo.png"  class="menu-logo-img">
+    <ion-buttons end>
+      <button ion-button icon-only (click)="filterModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <!--<scroll-tabs *ngIf="show" #scrollTab [tabs]="tabs" (onSelectedTab)="tabChange($event)"></scroll-tabs> -->
+
+</ion-header>
+
+<ion-content  class="page-categories">
+    <form action="">
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    </form>
+      <ion-scroll scrollY="true" scrollX="true" class="content-wrapper">
+        <div *ngIf="ItemsReady">
+          <div class="card9-container" *ngFor="let item of items">
+           
+            <div (tap)="toProduct(item)">
+            
+              <div class="pic-box" >
+              <img [src] = "getImgContent(item.image1)">
+            </div>
+            <div class="title">
+              {{item.name}}
+            </div>
+            <!--<div class="temp">
+              {{item.company_name}}
+            </div>-->
+
+            <div class="price-box" *ngIf="item.price != 0">
+              <span class="price">{{item.currentPrice}} LE<span class="old-price">{{item.price}} LE</span></span>
+              
+              
+              <span class="price-love" [class.selected]="item.love">
+                <ion-icon name="heart"></ion-icon>
+              </span>
+            </div>
+
+            <div class="price-box" *ngIf="item.price ==0">
+                <span class="price">{{item.currentPrice}} LE</span>
+                
+                
+                <span class="price-love" [class.selected]="item.love">
+                  <ion-icon name="heart"></ion-icon>
+                </span>
+              </div>
+
+          </div>
+          </div>
+        </div>
+      </ion-scroll>
+    
+ 
+</ion-content>
