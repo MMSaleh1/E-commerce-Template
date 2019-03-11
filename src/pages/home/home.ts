@@ -28,19 +28,19 @@ export class HomePage {
   cCount:number = 80;
   adsSliders = [
     {
-      image: 'assets/img/jotun.jpg',
+      image: 'assets/img/temporary.png',
       title: 'Flat <span>80%</span> off',
       description: 'on international brands',
       
     },
     {
-      image: 'assets/img/elsewedy.png',
+      image: 'assets/img/temporary.png',
       title: 'Super Sale <span>50%</span> off',
       description: 'on international brands',
       
     },
     {
-      image: 'assets/img/philips1.jpg',
+      image: 'assets/img/temporary.png',
       title: 'Crazy <span>65%</span> off',
       description: 'on international brands',
       

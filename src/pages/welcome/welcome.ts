@@ -24,21 +24,21 @@ interface shopSlider {
 })
 export class WelcomePage {
   shopSliders: shopSlider[] = [
-    {
-      image: 'assets/img/welcome/welcome1.jpg',
+     {
+       image: 'assets/img/temporary.png'
     },
-    {
-      image: 'assets/img/welcome/welcome2.jpg',
-    },
-    {
-      image: 'assets/img/welcome/welcome3.jpg',
-    },
-    {
-      image: 'assets/img/welcome/welcome4.jpg',
-    },
-    {
-      image: 'assets/img/welcome/welcome5.jpg',
-    },
+    // {
+    //   image: 'assets/img/welcome/welcome2.jpg',
+    // },
+    // {
+    //   image: 'assets/img/welcome/welcome3.jpg',
+    // },
+    // {
+    //   image: 'assets/img/welcome/welcome4.jpg',
+    // },
+    // {
+    //   image: 'assets/img/welcome/welcome5.jpg',
+    // },
   ];
   public ready = false;
   public db : Database;
