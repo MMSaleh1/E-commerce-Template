@@ -179,7 +179,7 @@ export class CategoryProvider {
     let subcat = await this.getSubCategoriesNop();
     return new Promise((resolve) => {
       this.http.get(`${RootProvider.APIURL4}${this.categoriesApiController}${this.categoriesActionString}`).map(res => <any>res.json()).subscribe(data => {
-        if (data == null || data.length == 0 || subcat.length == 0) {
+        if (data == null || data.length == 0 ) {
           resolve([])
         }
         else {
@@ -187,15 +187,18 @@ export class CategoryProvider {
           for (let i = 0; i < data.length; i++) {
             let tempcats = new Array();
             if (data[i].Deleted == false) {
-              for (let j = 0; j < subcat.length; j++) {
+              if(subcat.length != 0){
+                for (let j = 0; j < subcat.length; j++) {
 
-                if (data[i].Id == subcat[j].parent) {
-                  tempcats.push(subcat[j]);
-
-                  //console.log(tempcats);
+                  if (data[i].Id == subcat[j].parent) {
+                    tempcats.push(subcat[j]);
+  
+                    //console.log(tempcats);
+                  }
+  
                 }
-
               }
+             
               catArray.push(new Category(data[i].Name, data[i].Id, tempcats, data[i].PictureBinary, data[i].MimeType, data[i].ParentCategoryId, data[i].Deleted, true))
 
             }
