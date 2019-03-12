@@ -1,5 +1,5 @@
 {
-  "name": "doctors",
+  "name": "furniture",
   "author": "quanganh@aiti.com.vn",
   "homepage": "https://quanganh206.github.io/",
   "private": true,
@@ -66,7 +66,7 @@
       "locator": "ios"
     }
   ],
-  "description": "BOQ: Market place for constructions in egypt",
+  "description": "App For furniture stores",
   "cordova": {
     "plugins": {
       "cordova-plugin-inappbrowser": {},
