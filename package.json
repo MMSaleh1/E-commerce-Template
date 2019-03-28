@@ -1,7 +1,7 @@
 {
-  "name": "doctors",
-  "author": "quanganh@aiti.com.vn",
-  "homepage": "https://quanganh206.github.io/",
+  "name": "Salons",
+  "author": "mohammed.magdy.ali.96@gmail.com",
+  "homepage": "https://github.com/MMSaleh1/E-commerce-Template",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",

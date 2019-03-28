@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.edgeThecno.temp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Doctors</name>
-    <description>Equipments for Doctors</description>
+<widget id="com.edgeTechno.salons" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Salons</name>
+    <description>App for Salons</description>
     <author email="mmagdy@edge-techno.com" href="http://ionicframework.com/">edgeTechnology</author>
     <content src="index.html" />
     <access origin="*" />
