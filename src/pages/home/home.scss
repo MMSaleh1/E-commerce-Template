@@ -6,6 +6,36 @@ background-color: #fff;
 //   bottom: 3vh;
 //   width: 100%;
 // }
+.cate-list{
+  height: 20%;
+  background-color: transparent;
+  /* -webkit-box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.75); */
+  box-shadow: 1px 1px 0px 2px rgba(0, 0, 0, 0.75);
+  margin: 12px 10px 11px 20px;
+  width: 90%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  .label-md{
+    height: 100%;
+
+  }
+  .cate-name{
+    width: 66%;
+    display: inline-block;
+  }
+  .cate-image-cont{
+    height: 100%;
+    width: 33%;
+    display: inline-block;
+  }
+  .cate-image{
+    height: 100%;
+    width: 100%;
+  }
+}
 .slider-image{
   width: 100%;
 }
